@@ -393,13 +393,13 @@
                     `;
 
                     displayMessage('bot', windDownRoutineResponse, () => { 
-                        displayMessage('bot', "This is the end of the response. Please proceed to the next page after reading the information. You cannot return to this page.", () => {
+                        displayMessage('bot', "This is the end of the response. Please proceed to the next page after reading the information. You may not return to this page.", () => {
                             endResponseShown = true; 
                         });
                     });
                 } else {
                     // Always display the end response after it has been shown once
-                    displayMessage('bot', "This is the end of the response. Please proceed to the next page after reading the information. You cannot return to this page.");
+                    displayMessage('bot', "This is the end of the response. Please proceed to the next page after reading the information. You may not return to this page.");
                 }
             } else {
                 // Simulated bot response (Default behavior)
@@ -409,7 +409,7 @@
                     }, 500);
                 } else {
                     // Always display the end response after it has been shown once
-                    displayMessage('bot', "This is the end of the response. Please proceed to the next page after reading the information. You cannot return to this page.");
+                    displayMessage('bot', "This is the end of the response. Please proceed to the next page after reading the information. You may not return to this page.");
                 }
             }
         }
